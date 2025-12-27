@@ -1,17 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<li class="nav-item">
-    <a class="nav-link" href="index.html">Home</a>
-</li>
+    <title>Oradea – History</title>
 
-<li class="nav-item">
-    <a class="nav-link active" href="history.html">History</a>
-</li>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootswatch Darkly theme -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/darkly/bootstrap.min.css">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body { padding-top: 70px; }
+        .section { padding: 3rem 0; }
+        .timeline {
+            border-left: 3px solid #0d6efd;
+            padding-left: 2rem;
+        }
+        .timeline-item {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Oradea</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarOradea">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarOradea">
+            <ul class="navbar-nav me-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="history.html">History</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="attractions.html">Attractions</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="culture.html">Culture &amp; Events</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="travel.html">Travel Guide</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="container">
+
+    <!-- INTRO -->
+    <section class="section">
+        <h1 class="mb-4">History of Oradea</h1>
+        <p class="fs-5">
+            Oradea is one of the oldest and most culturally rich cities in Romania.
+            Located in the northwest of the country, the city has been shaped by
+            centuries of political, religious, and architectural influences.
+        </p>
+        <p>
+            From its medieval fortress to its elegant Art Nouveau buildings,
+            Oradea reflects a unique blend of Central European and Romanian history.
+        </p>
+    </section>
+
+    <!-- EARLY HISTORY -->
+    <section class="section">
+        <h2 class="mb-3">Early Beginnings</h2>
+        <p>
+            Archaeological discoveries show that the area around Oradea has been
+            inhabited since ancient times. The city gained importance during the
+            Middle Ages due to its strategic position near important trade routes.
+        </p>
+        <p>
+            The construction of the Oradea Fortress marked the beginning of the
+            city’s development as a military and religious center.
+        </p>
+    </section>
+
+    <!-- MEDIEVAL PERIOD -->
+    <section class="section">
+        <h2 class="mb-3">Medieval Oradea</h2>
+        <p>
+            During the medieval period, Oradea became an important cultural and
+            religious center. The fortress served both defensive and administrative
+            purposes and attracted craftsmen, merchants, and scholars.
+        </p>
+        <p>
+            The city was also known for its religious diversity, hosting Catholic,
+            Orthodox, and later Protestant communities.
+        </p>
+    </section>
+
+    <!-- AUSTRO-HUNGARIAN ERA -->
+    <section class="section">
+        <h2 class="mb-3">Austro-Hungarian Influence</h2>
+        <p>
+            One of the most defining periods in Oradea’s history was the
+            Austro-Hungarian era. During this time, the city experienced rapid
+            economic growth and urban development.
+        </p>
+        <p>
+            Many of the iconic Art Nouveau buildings in the city center were
+            constructed in this period, giving Oradea its distinctive architectural
+            identity.
+        </p>
+    </section>
+
+    <!-- 20TH CENTURY -->
+    <section class="section">
+        <h2 class="mb-3">20th Century and Modern Era</h2>
+        <p>
+            The 20th century brought significant political changes, including
+            world wars and shifts in borders. Despite these challenges, Oradea
+            continued to evolve and adapt.
+        </p>
+        <p>
+            In recent decades, extensive restoration projects have revitalized
+            the historic center, transforming Oradea into one of Romania’s most
+            attractive cities.
+        </p>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section">
+        <h2 class="mb-4">Historical Timeline</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <h5>11th–13th Century</h5>
+                <p>Construction and expansion of the Oradea Fortress.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h5>16th–17th Century</h5>
+                <p>Fortress plays a key defensive role in regional conflicts.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h5>19th Century</h5>
+                <p>Rapid urban growth and Art Nouveau architectural boom.</p>
+            </div>
+
+            <div class="timeline-item">
+                <h5>20th–21st Century</h5>
+                <p>Modernization, restoration, and cultural revival.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DID YOU KNOW -->
+    <section class="section">
+        <h2 class="mb-3">Did You Know?</h2>
+        <ul class="fs-5">
+            <li>Oradea was once known as one of the most elegant cities in the region.</li>
+            <li>The fortress has a unique pentagonal shape.</li>
+            <li>The city is famous for its Art Nouveau heritage.</li>
+            <li>Thermal waters have been used here for centuries.</li>
+        </ul>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="mt-5 py-4 bg-dark text-center">
+    <div class="container">
+        <p class="mb-1">© 2025 Oradea City Guide</p>
+        <p class="mb-0">Created as a presentation site about Oradea, Romania.</p>
+    </div>
+</footer>
 
 </body>
 </html>
