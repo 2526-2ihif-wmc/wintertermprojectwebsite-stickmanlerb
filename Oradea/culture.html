@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Oradea – History</title>
+    <title>Oradea – Culture &amp; Events</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,12 +17,42 @@
     <style>
         body { padding-top: 70px; }
         .section { padding: 3rem 0; }
+
+        .hero-mini {
+            border-radius: 12px;
+            overflow: hidden;
+            min-height: 260px;
+            background-image: url('img/oradea-culture-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero-mini::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.55);
+        }
+        .hero-mini-content {
+            position: relative;
+            z-index: 1;
+            padding: 3rem 2rem;
+        }
+
+        .card-img-top.culture-img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .badge-soft {
+            border: 1px solid rgba(255,255,255,0.2);
+        }
     </style>
 </head>
 
 <body>
 
-<!-- NAVBAR (ONLY ONCE) -->
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Oradea</a>
@@ -41,7 +71,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="history.html">History</a>
+                    <a class="nav-link" href="history.html">History</a>
                 </li>
 
                 <li class="nav-item">
@@ -49,7 +79,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="culture.html">Culture &amp; Events</a>
+                    <a class="nav-link active" href="culture.html">Culture &amp; Events</a>
                 </li>
 
                 <li class="nav-item">
@@ -61,20 +91,174 @@
     </div>
 </nav>
 
-<!-- MAIN CONTENT -->
-<main class="container section">
-    <h1 class="mb-4">History of Oradea</h1>
+<main class="container">
 
-    <p>
-        Oradea is one of the oldest cities in Romania, with a rich history shaped
-        by medieval fortresses, Austro-Hungarian influence, and modern development.
-    </p>
+    <!-- MINI HERO -->
+    <section class="section">
+        <div class="hero-mini">
+            <div class="hero-mini-content">
+                <h1 class="display-6 fw-bold mb-2">Culture &amp; Events in Oradea</h1>
+                <p class="lead mb-0">
+                    From music and theatre to festivals, museums, and Art Nouveau heritage — Oradea’s cultural life
+                    brings the city to life all year long.
+                </p>
+            </div>
+        </div>
+    </section>
 
-    <p>
-        The Oradea Fortress played a major role in the city’s strategic importance,
-        while the Art Nouveau period transformed the city center into an
-        architectural jewel.
-    </p>
+    <!-- CULTURE OVERVIEW -->
+    <section class="section">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-7">
+                <h2 class="mb-3">A City with Personality</h2>
+                <p class="fs-5">
+                    Oradea blends Romanian traditions with strong Central European influences. The historic center,
+                    restored buildings, and vibrant public spaces create a perfect background for concerts, exhibitions,
+                    and seasonal events.
+                </p>
+                <p>
+                    Whether you enjoy classical music, modern art, street festivals, or a relaxed café atmosphere,
+                    you’ll find something to match your vibe.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                    <span class="badge badge-soft rounded-pill text-bg-primary">Festivals</span>
+                    <span class="badge badge-soft rounded-pill text-bg-secondary">Museums</span>
+                    <span class="badge badge-soft rounded-pill text-bg-success">Theatre</span>
+                    <span class="badge badge-soft rounded-pill text-bg-info">Music</span>
+                    <span class="badge badge-soft rounded-pill text-bg-warning">Art Nouveau</span>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <img src="img/oradea-culture-street.jpg" class="img-fluid rounded"
+                     alt="Culture street scene in Oradea">
+            </div>
+        </div>
+    </section>
+
+    <!-- CULTURE CARDS -->
+    <section class="section">
+        <h2 class="mb-4 text-center">What to Experience</h2>
+
+        <div class="row g-4">
+
+            <!-- Theatre -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/oradea-theatre.jpg" class="card-img-top culture-img" alt="Theatre in Oradea">
+                    <div class="card-body">
+                        <h5 class="card-title">Theatre &amp; Performing Arts</h5>
+                        <p class="card-text">
+                            Enjoy plays, modern performances, and cultural evenings in an elegant historic setting.
+                        </p>
+                        <ul class="mb-0">
+                            <li>Drama &amp; comedy performances</li>
+                            <li>Seasonal shows</li>
+                            <li>Family-friendly events</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Music -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/oradea-music.jpg" class="card-img-top culture-img" alt="Concert in Oradea">
+                    <div class="card-body">
+                        <h5 class="card-title">Music &amp; Concerts</h5>
+                        <p class="card-text">
+                            From classical concerts to modern performances, Oradea offers music all year.
+                        </p>
+                        <ul class="mb-0">
+                            <li>Philharmonic concerts</li>
+                            <li>Open-air summer music</li>
+                            <li>Local bands &amp; venues</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Museums -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/oradea-museum.jpg" class="card-img-top culture-img" alt="Museum in Oradea">
+                    <div class="card-body">
+                        <h5 class="card-title">Museums &amp; Heritage</h5>
+                        <p class="card-text">
+                            Discover local history, architecture, and stories that shaped the city.
+                        </p>
+                        <ul class="mb-0">
+                            <li>City history exhibitions</li>
+                            <li>Art &amp; design collections</li>
+                            <li>Historic houses and memorials</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EVENTS LIST -->
+    <section class="section">
+        <h2 class="mb-3">Events You Can Add to Your Site</h2>
+        <p class="text-muted mb-4">
+            Tip: even if you don’t know exact dates, you can list events “seasonally” (Spring / Summer / Autumn / Winter).
+        </p>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Spring / Summer</h5>
+                        <ul class="fs-5">
+                            <li>Open-air concerts in the city center</li>
+                            <li>Street food &amp; local craft markets</li>
+                            <li>Fortress cultural weekends</li>
+                            <li>Art exhibitions and photography events</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Autumn / Winter</h5>
+                        <ul class="fs-5">
+                            <li>Seasonal festivals and holiday lights</li>
+                            <li>Indoor theatre and concert season</li>
+                            <li>Winter markets &amp; warm café culture</li>
+                            <li>New Year events in the main square</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOD & CAFÉ CULTURE -->
+    <section class="section">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-5">
+                <img src="img/oradea-cafe.jpg" class="img-fluid rounded" alt="Café in Oradea">
+            </div>
+            <div class="col-md-7">
+                <h2 class="mb-3">Food &amp; Café Culture</h2>
+                <p class="fs-5">
+                    The city center is full of cozy cafés, bakeries, and restaurants. A simple cultural experience in
+                    Oradea is spending an evening in Piața Unirii with good food and a relaxed atmosphere.
+                </p>
+                <ul class="fs-5 mb-0">
+                    <li>Try local Romanian dishes + Central European flavors</li>
+                    <li>Enjoy coffee breaks in the historic center</li>
+                    <li>Perfect for photos and evening walks</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
 </main>
 
 <!-- FOOTER -->
