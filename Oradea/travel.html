@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Oradea – History</title>
+    <title>Oradea – Travel Guide</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,12 +17,43 @@
     <style>
         body { padding-top: 70px; }
         .section { padding: 3rem 0; }
+
+        .hero-mini {
+            border-radius: 12px;
+            overflow: hidden;
+            min-height: 260px;
+            background-image: url('img/oradea-travel-hero.jpeg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero-mini::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.55);
+        }
+        .hero-mini-content {
+            position: relative;
+            z-index: 1;
+            padding: 3rem 2rem;
+        }
+
+        .card-img-top.travel-img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .tip {
+            border-left: 4px solid #0d6efd;
+            padding-left: 1rem;
+        }
     </style>
 </head>
 
 <body>
 
-<!-- NAVBAR (ONLY ONCE) -->
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Oradea</a>
@@ -41,7 +72,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="history.html">History</a>
+                    <a class="nav-link" href="history.html">History</a>
                 </li>
 
                 <li class="nav-item">
@@ -53,7 +84,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="travel.html">Travel Guide</a>
+                    <a class="nav-link active" href="travel.html">Travel Guide</a>
                 </li>
 
             </ul>
@@ -61,20 +92,185 @@
     </div>
 </nav>
 
-<!-- MAIN CONTENT -->
-<main class="container section">
-    <h1 class="mb-4">History of Oradea</h1>
+<main class="container">
 
-    <p>
-        Oradea is one of the oldest cities in Romania, with a rich history shaped
-        by medieval fortresses, Austro-Hungarian influence, and modern development.
-    </p>
+    <!-- MINI HERO -->
+    <section class="section">
+        <div class="hero-mini">
+            <div class="hero-mini-content">
+                <h1 class="display-6 fw-bold mb-2">Travel Guide to Oradea</h1>
+                <p class="lead mb-0">
+                    How to get here, where to stay, how to move around, and what to enjoy — practical tips for a smooth trip.
+                </p>
+            </div>
+        </div>
+    </section>
 
-    <p>
-        The Oradea Fortress played a major role in the city’s strategic importance,
-        while the Art Nouveau period transformed the city center into an
-        architectural jewel.
-    </p>
+    <!-- HOW TO GET TO ORADEA -->
+    <section class="section">
+        <h2 class="mb-4 text-center">How to Get to Oradea</h2>
+
+        <div class="row g-4">
+
+            <!-- By Car -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/oradea-travel-car.png" class="card-img-top travel-img" alt="Travel by car">
+                    <div class="card-body">
+                        <h5 class="card-title">By Car</h5>
+                        <p class="card-text">
+                            Oradea is close to the Hungarian border and is easy to reach by car from both Romania and Central Europe.
+                        </p>
+                        <ul class="mb-0">
+                            <li>Good option for flexibility</li>
+                            <li>Parking available in many areas</li>
+                            <li>Great for day trips around Bihor</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- By Train -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/oradea-travel-train.jpg" class="card-img-top travel-img" alt="Travel by train">
+                    <div class="card-body">
+                        <h5 class="card-title">By Train</h5>
+                        <p class="card-text">
+                            Trains connect Oradea with major Romanian cities. It’s a good choice if you want a relaxed trip.
+                        </p>
+                        <ul class="mb-0">
+                            <li>Affordable option</li>
+                            <li>Central station access</li>
+                            <li>Comfortable for longer travel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- By Plane -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="img/oradea-travel-plane.jpg" class="card-img-top travel-img" alt="Travel by plane">
+                    <div class="card-body">
+                        <h5 class="card-title">By Plane</h5>
+                        <p class="card-text">
+                            Oradea Airport offers flights and connections. If needed, you can also use nearby larger airports.
+                        </p>
+                        <ul class="mb-0">
+                            <li>Fastest option (when flights match)</li>
+                            <li>Airport is near the city</li>
+                            <li>Alternative airports: Cluj / Debrecen / Budapest</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WHERE TO STAY -->
+    <section class="section">
+        <h2 class="mb-4 text-center">Where to Stay</h2>
+
+        <div class="row g-4 align-items-center">
+            <div class="col-md-6">
+                <img src="img/oradea-travel-hotel.jpg" class="img-fluid rounded" alt="Hotels in Oradea">
+            </div>
+            <div class="col-md-6">
+                <p class="fs-5">
+                    Oradea has a strong mix of hotels, apartments, and thermal wellness stays. A smart choice is staying close to
+                    the city center so you can walk to the main attractions.
+                </p>
+                <ul class="fs-5 mb-0">
+                    <li><strong>City center:</strong> best for walking and restaurants</li>
+                    <li><strong>Near thermal areas:</strong> great for relaxation</li>
+                    <li><strong>Apartments:</strong> good for longer stays or families</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- GETTING AROUND -->
+    <section class="section">
+        <h2 class="mb-4 text-center">Getting Around the City</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Walking</h5>
+                        <p class="card-text">
+                            The historic center is very walkable and perfect for exploring on foot.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Public Transport</h5>
+                        <p class="card-text">
+                            Trams and buses cover the city well and are useful for longer distances.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Taxi / Ride Apps</h5>
+                        <p class="card-text">
+                            Good for quick rides, especially at night or with luggage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOD & RESTAURANTS -->
+    <section class="section">
+        <h2 class="mb-4 text-center">Food &amp; Local Tips</h2>
+
+        <div class="row g-4 align-items-center">
+            <div class="col-md-7">
+                <p class="fs-5">
+                    Oradea’s city center has cafés, bakeries, and restaurants in a beautiful setting. A simple “perfect day”
+                    is exploring the center, eating local food, and ending with a relaxing walk along the river.
+                </p>
+
+                <div class="tip fs-5">
+                    <p class="mb-2"><strong>Tip:</strong> Try local dishes and pastries, and enjoy evening cafés in Piața Unirii.</p>
+                    <p class="mb-0"><strong>Tip:</strong> Visit thermal baths if the weather is cold — it’s a great experience.</p>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <img src="img/oradea-travel-food.jpg" class="img-fluid rounded" alt="Food and cafés in Oradea">
+            </div>
+        </div>
+    </section>
+
+    <!-- BEST TIME TO VISIT -->
+    <section class="section">
+        <h2 class="mb-3">Best Time to Visit</h2>
+        <p class="fs-5">
+            Oradea is enjoyable year-round. Spring and summer are great for walking and outdoor cafés, while autumn and winter
+            are perfect for museums, events, and thermal relaxation.
+        </p>
+        <ul class="fs-5">
+            <li><strong>Spring:</strong> mild weather, good for exploring</li>
+            <li><strong>Summer:</strong> festivals, open-air events</li>
+            <li><strong>Autumn:</strong> calm atmosphere, beautiful city walks</li>
+            <li><strong>Winter:</strong> holiday lights + thermal baths</li>
+        </ul>
+    </section>
+
 </main>
 
 <!-- FOOTER -->
